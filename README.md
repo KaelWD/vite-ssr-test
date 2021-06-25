@@ -13,21 +13,6 @@ $ yarn -v
 `yarn dev:ssr`:
 
 ```
-[vite] Error when evaluating SSR module /TsxComponent.tsx:
-ReferenceError: __default__ is not defined
-    at eval (/TsxComponent.tsx:18:41)
-    at instantiateModule (/home/kael/Documents/vuetifyjs/test-projects/vite-ssr/node_modules/vite/dist/node/chunks/dep-0ed4fbc0.js:69982:166)
-ReferenceError: __default__ is not defined
-    at eval (/TsxComponent.tsx:18:41)
-    at instantiateModule (/home/kael/Documents/vuetifyjs/test-projects/vite-ssr/node_modules/vite/dist/node/chunks/dep-0ed4fbc0.js:69982:166)
-6:58:16 pm [vite] Internal server error: __default__ is not defined
-      at eval (/TsxComponent.tsx:18:41)
-      at instantiateModule (/home/kael/Documents/vuetifyjs/test-projects/vite-ssr/node_modules/vite/dist/node/chunks/dep-0ed4fbc0.js:69982:166)
-```
-
-`yarn dev:ssr` without the TSX component:
-
-```
 [vite] Error when evaluating SSR module /home/kael/Documents/vuetifyjs/test-projects/vite-ssr/src/index.js:
 Error: Cannot find module 'vite-ssr' from '/home/kael/Documents/vuetifyjs/test-projects/vite-ssr/src'
     at Function.resolveSync [as sync] (/home/kael/Documents/vuetifyjs/test-projects/vite-ssr/node_modules/resolve/lib/sync.js:102:15)

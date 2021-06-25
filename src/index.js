@@ -1,10 +1,6 @@
 import viteSSR from 'vite-ssr'
 import App from './App.vue'
 
-import 'vuetify/lib/styles/main.sass'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/lib/components'
-
 const component1 = {
   template: `<div class="title">Page 1</div>`,
 }
@@ -27,7 +23,5 @@ const routes = [
 ]
 
 export default viteSSR(App, { routes }, ({ app }) => {
-  console.log(import.meta.env.SSR)
-
-  app.use(createVuetify({ components }))
+  //
 })
